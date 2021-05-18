@@ -1,45 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/styles.css" rel="stylesheet">
   <title>TYPING GAME!</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div class="wrap">
     <div class="container">
-
-      <a href="intro.html" id="back_btn">
-        <img src="images/prev_btn.png" alt="돌아가기 버튼">
-      </a>
-
-      <div class="timer_wrap">
-        <p class="game__timertitle">Timer</p>
-        <h1 class="game__timer">08</h1>
+      <div class="logo">
+        <img src="images/title.png" alt="타이핑게임 타이틀">
       </div>
-  
-      <div class="game">
-        <h3 class="game__word"></h3>
-        <input class="game__input" type="text">  
-        <p class="game__score">YOUR SCORE : <span>0</span></p>
-          
-        <p class="game__terminated">FINAL SCORE : <span></span></p>
-      </div><!--game-->
-      
+
+      <a href="game.html" class="start-btn">
+        <span>START</span>
+        <div class="transition"></div>
+      </a>
     </div>
   </div>
-
-
-  <!-- script -->
-  <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/words.js"></script>
-  <script src="js/game.js"></script>
-
 </body>
-</html>
-
-
-
-
-
+</html>  
