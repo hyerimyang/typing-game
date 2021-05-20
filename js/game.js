@@ -5,6 +5,7 @@ let wordIdx;
 let score = 0;
 let reward = 5;
 
+// 게임 끝
 function terminateGame(){
   clearInterval(interID);
   $(".game__input").attr("disabled", "true");
@@ -32,7 +33,7 @@ function refreshWord(){
 function compareWord(){
   const typedWord = $(".game__input").val();
 
-  if(currentWord == typedWord){
+  if(currentWord == typedWord){ // 정답!
     time += reward;
     score++;
     $(".game__input").val("");
